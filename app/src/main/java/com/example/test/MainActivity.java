@@ -1,11 +1,11 @@
 package com.example.test;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     //Button of login
@@ -25,8 +25,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this, BusLoginActivity.class);
                 startActivity(intent);
-                finish();
-                return;
             }
         });
 
@@ -36,8 +34,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this, PassengerLoginActivity.class);
                 startActivity(intent);
-                finish();
-                return;
             }
         });
     }

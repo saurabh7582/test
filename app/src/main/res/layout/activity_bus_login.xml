@@ -11,12 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-        android:text="Email"
+        android:text=""
         android:id="@+id/Email_id"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="password"
+        android:text=""
         android:layout_marginTop="20dp"
         android:id="@+id/password"/>
 
@@ -41,5 +41,4 @@
             android:text="signup"
             android:id="@+id/sign_up"/>
     </LinearLayout>
-
 </LinearLayout>
