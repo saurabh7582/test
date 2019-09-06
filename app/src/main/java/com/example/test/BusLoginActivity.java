@@ -94,8 +94,6 @@ public class BusLoginActivity extends AppCompatActivity {
                            }
                        });
 
-
-
              /* Intent intent=new Intent(BusLoginActivity.this,Bus_Location.class);
               startActivity(intent);
 
