@@ -1,6 +1,5 @@
 package com.example.test;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -47,7 +46,7 @@ public class BusLoginActivity extends AppCompatActivity {
            @Override
            public void onClick(View view){
 
-              /* mAuth.createUserWithEmailAndPassword(email, password)
+              mAuth.createUserWithEmailAndPassword(email, password)
                        .addOnCompleteListener(BusLoginActivity.this, new OnCompleteListener<AuthResult>() {
                            @Override
                            public void onComplete(@NonNull Task<AuthResult> task) {
@@ -65,7 +64,6 @@ public class BusLoginActivity extends AppCompatActivity {
                            }
                        });
 
-               */
            }
        });
 
@@ -98,8 +96,10 @@ public class BusLoginActivity extends AppCompatActivity {
 
 
 
-              Intent intent=new Intent(BusLoginActivity.this,Bus_Location.class);
+             /* Intent intent=new Intent(BusLoginActivity.this,Bus_Location.class);
               startActivity(intent);
+
+              */
            }
        });
 
@@ -110,7 +110,7 @@ public class BusLoginActivity extends AppCompatActivity {
 
         FirebaseUser user=mAuth.getCurrentUser();
 
-        /*if(user==null)
+        if(user==null)
         {
             Toast.makeText(BusLoginActivity.this, "user login fail.",
                     Toast.LENGTH_SHORT).show();
@@ -120,7 +120,7 @@ public class BusLoginActivity extends AppCompatActivity {
             Toast.makeText(BusLoginActivity.this, user.getEmail(),
                     Toast.LENGTH_SHORT).show();
         }
-         */
+
     }
 
     @Override
